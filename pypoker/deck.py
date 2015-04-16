@@ -9,6 +9,7 @@ from pypoker.hand import Hand
 
 
 class Deck(list):
+    
     def __init__(self, start="2", end="A", from_list=None):
         if not from_list:
             list.__init__(self)
@@ -48,6 +49,3 @@ class Deck(list):
 
 
 #------------------------------------------------------------------------------
-
-def ACTUAL_ORDER(PBNS, IAT,IBOND, BTYPE):
-    return ( PBNS.edge[PBNS.vert[IAT].iedge[IBOND]].flow + BOND_TYPE_SINGLE if (PBNS and PBNS.edge and PBNS.vert and (BTYPE == BOND_ALT_123 or BTYPE == BOND_ALT_13 or BTYPE == BOND_ALT_23)) else BTYPE)
